@@ -11,7 +11,7 @@ export default function Login() {
   const onSubmit = (e) => {
     e.preventDefault();
     login(email, password)
-      .then((r) => console.log(r))
+      .then((r) => console.log(r)) // Hmmm... maybe we should do something with this information?
       .catch((e) => setError(e.response.data.message));
   };
 
