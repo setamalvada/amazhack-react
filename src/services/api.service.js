@@ -3,7 +3,9 @@ import axios from "axios";
 axios.defaults.baseURL = "http://localhost:3010";
 
 export const login = (email, password) => {
-  return axios.post("/login", { email, password }).then((res) => res.data);
+  return axios
+    .post("/login", { email, password }, { withCredentials: true })
+    .then((res) => res.data);
 };
 
 export const getProducts = () => {
