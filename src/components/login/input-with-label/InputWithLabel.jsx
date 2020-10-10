@@ -1,4 +1,4 @@
-import "./InputWithLabel.css";
+// import "./InputWithLabel.css";
 import React from "react";
 
 export default function InputWithLabel({ value, label, onChange, type }) {
